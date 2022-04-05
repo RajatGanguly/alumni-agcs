@@ -1,0 +1,22 @@
+.gmap{
+    width: 100vw;
+    height: 72vh;
+}
+
+.chead{
+    margin: 10px 0;
+    color: #54595F;
+    font-weight: bold;
+}
+
+.csubhead{
+    margin: 10px 0;
+    color: #000;
+    font-weight: bold;
+}
+
+@media(max-width: 756px){
+    .gmap{
+        height: 64vh;
+    }
+}

@@ -1,0 +1,22 @@
+.ban-img{
+    height: 96vh;
+}
+
+@media (max-height: 752px){
+    .ban-img{
+        height: 64vh;
+    }
+}
+
+.welcome-text{
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    text-align: center;
+}
+
+.mission-img{
+    margin-left: 14%;
+    margin-bottom: 10%;
+    width: 72%;
+    height: 60vh;
+}

@@ -1,0 +1,16 @@
+.csubhead{
+    font-size: larger;
+    margin: 10px 0;
+    color: #000;
+    font-weight: bold;
+}
+
+.applybtn{
+    color: #fff;
+    text-decoration: none;
+    width: 64vw;
+}
+
+.btn-info{
+    margin-left: 12vw;
+}
