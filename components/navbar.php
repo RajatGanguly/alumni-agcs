@@ -8,15 +8,17 @@
     </div>
     <ul class="menu-items">
       <li><a href="./">Home</a></li>
-      <li><a href="./about.-us.php">About</a></li>
-      <li><a href="#">Events</a></li>
+      <li><a href="./about-us.php">About</a></li>
+      <li><a href="./gallery.php">Gallery</a></li>
       <li><a href="./contact-us.php">Contacts</a></li>
-      <li><a href="./members.php">Members</a></li>
-      <li><a href="#">AGM</a></li>
+      <li><a href="./members.php">Membership</a></li>
+      <li><a href="./agm.php">AGM</a></li>
+      <li><a href="./donation.php">Donate</a></li>
+      <li><a href="./enroll.php">Enroll</a></li>
      
     </ul>
-    <div class="logo">Logo
-      <!-- <img src="./pics/logo.jpeg"> -->
+    <div class="logo">
+      <img src="./pics/logo.jpeg">
     </div>
   </div>
 </nav>

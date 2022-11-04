@@ -1,22 +1,37 @@
 .ban-img{
-    height: 96vh;
+    height: 48px;
 }
 
 @media (max-height: 752px){
     .ban-img{
-        height: 64vh;
+        height: 80vh;
+    }
+    .mission-img{
+        height: 60vh;
     }
 }
 
 .welcome-text{
-    margin-top: 6vh;
+    margin-top: 12vh;
     margin-bottom: 6vh;
     text-align: center;
 }
 
-.mission-img{
-    margin-left: 14%;
+.mission-img {
+    margin-left: 25%;
     margin-bottom: 10%;
-    width: 72%;
+    width: 53%;
     height: 60vh;
+}
+.carousel-control-prev, .carousel-control-next{
+    height: 12vh;
+    margin-top: 36vh;
+}
+@media (min-height: 480px){
+    .ban-img{
+        height: 80vh;
+    }
+    .mission-img {
+    height: 60vh;
+    }
 }

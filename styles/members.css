@@ -14,3 +14,7 @@
 .btn-info{
     margin-left: 12vw;
 }
+
+.dataTables_wrapper{
+    position: static;
+}

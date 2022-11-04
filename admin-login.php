@@ -1,7 +1,6 @@
 <?php
-    if (isset($_SESSION["log"])){
-        header("Location: ./admin.php");
-    }
+    session_start();
+    $_SESSION["log"] = true;
 ?>
 
 <!DOCTYPE html>
@@ -44,27 +43,33 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
         include "./db/config.php";
-        $conn = mysqli_connect("localhost","root","","agsc");
-        $sql= "SELECT * FROM `admin` WHERE `user_name` = '$username' AND `user_pass` = '$password' ";
-        $result = mysqli_query($conn,$sql) or die("Database connection failed");
-        $check = false;
-        while($row = mysqli_fetch_assoc($result)){
-            if ($row["user_name"]==$username and $row["user_pass"]==$password){
-                $check=true;
-            }
-        }
-        if($check==true){
-        echo 'success';
-            session_start();
-            $_SESSION["log"]=true;
-            header("Location: ./admin.php");
-        }else{
-        // echo 'failure';
-        // header("Location: ./admin-login.php");
-        echo '<div class="alert alert-danger" role="alert">
-        Wrong User Name or Password! Try again!
-      </div>';
-        }
+    //     $conn = mysqli_connect("localhost","root","","agsc");
+    //     $sql= "SELECT * FROM `admin` WHERE `user_name` = '$username' AND `user_pass` = '$password' ";
+    //     $result = mysqli_query($conn,$sql) or die("Database connection failed");
+    //     $check = false;
+    //     while($row = mysqli_fetch_assoc($result)){
+    //         if ($row["user_name"]==$username and $row["user_pass"]==$password){
+    //             $check=true;
+    //         }
+    //     }
+    //     if($check==true){
+    //     echo 'success';
+    //         session_start();
+    //         $_SESSION["log"]=true;
+    //         header("Location: ./admin.php");
+    //     }else{
+    //     // echo 'failure';
+    //     // header("Location: ./admin-login.php");
+    //     echo '<div class="alert alert-danger" role="alert">
+    //     Wrong User Name or Password! Try again!
+    //   </div>';
+    //     }
+    $_SESSION["log"] = true;
+    if($username == "agcsAdmin" and $password == "alumni*agcs*5478"){
+        $_SESSION["log"] = true;
+        header("Location: http://alumniagcshaldia.org/admin.php");
+        echo $_SESSION["log"];
+    }
        }
    ?>
 

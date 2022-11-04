@@ -27,7 +27,7 @@
 .navbar {
   position: fixed;
   width: 100%;
-  background: #24252a;
+  background: #000;
   color: #fff;
 }
 
@@ -35,7 +35,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
+  height: 65px;
 }
 
 .menu-items {
@@ -45,6 +45,13 @@
 .logo {
   order: 1;
   font-size: 1.8rem;
+}
+
+.logo img{
+  position: absolute;
+  top: -.2rem;
+  left: 1.6rem;
+  font-size: 18px;
 }
 
 .menu-items li,
@@ -199,8 +206,17 @@ button:hover {
   }
 }
 
+.logo img{
+  width: 6vw;
+  height: 9vh;
+}
+
 @media (max-width: 500px) {
   .navbar-container input[type="checkbox"]:checked ~ .logo {
     display: none;
+  }
+  .logo img{
+    width: 16vw;
+    height: 7vh;
   }
 }
